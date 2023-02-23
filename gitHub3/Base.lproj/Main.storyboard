@@ -15,25 +15,113 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clase Vehículo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x53-wz-VnP">
+                                <rect key="frame" x="26" y="146" width="353" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="KYu-Vh-gfi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-Dy-24k">
+                                <rect key="frame" x="119" y="332" width="162" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Crear Auto Sencillo"/>
+                                <connections>
+                                    <action selector="btnEncender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnn-MR-4If"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4b-TD-zSd">
+                                <rect key="frame" x="125" y="430.5" width="150" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Crear auto Honda"/>
+                                <connections>
+                                    <action selector="btnApagar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8J5-qv-Pfa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x53-wz-VnP" secondAttribute="trailing" constant="35" id="6KN-mB-q6L"/>
+                            <constraint firstItem="x53-wz-VnP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="aZa-Eq-5Ci"/>
+                            <constraint firstItem="x53-wz-VnP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="mYG-Pn-Ei1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uVr-LI-qco"/>
+                    <connections>
+                        <outlet property="claseVehi" destination="x53-wz-VnP" id="28K-Nx-b0g"/>
+                        <segue destination="pSW-te-iwg" kind="show" identifier="pantallaDos" id="gN5-hq-hII"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="202.89855072463769" y="121.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Pantalla Dos View Controller-->
         <scene sceneID="jwy-xG-FuB">
             <objects>
-                <viewController id="pSW-te-iwg" sceneMemberID="viewController">
+                <viewController id="pSW-te-iwg" customClass="PantallaDosViewController" customModule="gitHub3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwp-yy-PLb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLR-DE-392">
+                                <rect key="frame" x="87" y="159" width="240" height="189"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-lo-aYo">
+                                <rect key="frame" x="126" y="112" width="172" height="30"/>
+                                <state key="normal" title="Mostrar info."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN3-hK-Mo6">
+                                <rect key="frame" x="126" y="413" width="172" height="30"/>
+                                <state key="normal" title="Mostrar info."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBs-4V-r6M">
+                                <rect key="frame" x="130" y="492" width="172" height="30"/>
+                                <state key="normal" title="Mostrar info."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD2-NF-LfR">
+                                <rect key="frame" x="132" y="555" width="172" height="30"/>
+                                <state key="normal" title="Mostrar info."/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostrar Información" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-g3-I3T">
+                                <rect key="frame" x="20" y="730" width="330" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="e6t-pl-oiO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lhy-39-IS9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oYp-g3-I3T" firstAttribute="leading" secondItem="zwp-yy-PLb" secondAttribute="leadingMargin" id="3SD-Pd-LGZ"/>
+                            <constraint firstItem="tuv-lo-aYo" firstAttribute="leading" secondItem="lhy-39-IS9" secondAttribute="leading" constant="126" id="5LU-wD-Y5g"/>
+                            <constraint firstItem="BLR-DE-392" firstAttribute="top" secondItem="tuv-lo-aYo" secondAttribute="bottom" constant="17" id="8lm-vO-b0f"/>
+                            <constraint firstItem="vBs-4V-r6M" firstAttribute="leading" secondItem="lhy-39-IS9" secondAttribute="leading" constant="130" id="DrK-Jo-pnr"/>
+                            <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="tuv-lo-aYo" secondAttribute="trailing" constant="116" id="ESa-Hx-Cru"/>
+                            <constraint firstItem="aN3-hK-Mo6" firstAttribute="trailing" secondItem="tuv-lo-aYo" secondAttribute="trailing" id="FMS-Ri-VvP"/>
+                            <constraint firstItem="aN3-hK-Mo6" firstAttribute="top" secondItem="BLR-DE-392" secondAttribute="bottom" constant="65" id="H0m-GS-sxQ"/>
+                            <constraint firstItem="lhy-39-IS9" firstAttribute="bottom" secondItem="oYp-g3-I3T" secondAttribute="bottom" constant="79" id="Jek-Er-d7Q"/>
+                            <constraint firstItem="vBs-4V-r6M" firstAttribute="top" secondItem="aN3-hK-Mo6" secondAttribute="bottom" constant="49" id="KQ5-hv-oiL"/>
+                            <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="vBs-4V-r6M" secondAttribute="trailing" constant="112" id="N9U-VK-ZWM"/>
+                            <constraint firstItem="aN3-hK-Mo6" firstAttribute="top" secondItem="zwp-yy-PLb" secondAttribute="top" constant="413" id="QWy-2x-neR"/>
+                            <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="oYp-g3-I3T" secondAttribute="trailing" constant="64" id="V2M-4L-MEk"/>
+                            <constraint firstItem="hD2-NF-LfR" firstAttribute="top" secondItem="vBs-4V-r6M" secondAttribute="bottom" constant="33" id="V9r-hb-Qe2"/>
+                            <constraint firstItem="hD2-NF-LfR" firstAttribute="leading" secondItem="aN3-hK-Mo6" secondAttribute="leading" id="h2G-AF-yAn"/>
+                            <constraint firstItem="tuv-lo-aYo" firstAttribute="top" secondItem="lhy-39-IS9" secondAttribute="top" constant="24" id="ltL-Du-Fpu"/>
+                            <constraint firstItem="hD2-NF-LfR" firstAttribute="trailing" secondItem="aN3-hK-Mo6" secondAttribute="trailing" id="pAu-xw-swd"/>
+                            <constraint firstItem="aN3-hK-Mo6" firstAttribute="leading" secondItem="tuv-lo-aYo" secondAttribute="leading" id="qLZ-Oy-EQT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yMo-sa-yKm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2r-RZ-c4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

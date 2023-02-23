@@ -9,11 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var claseVehi: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        let automovil = Automovil()
     }
 
-
+    @IBAction func btnEncender(_ sender: Any) {
+        
+        print("soy el boton encender")
+        performSegue(withIdentifier: "pantallaDos", sender: self)
+    }
+    
+    @IBAction func btnApagar(_ sender: Any) {
+        print("soy el boton apagar")
+        performSegue(withIdentifier: "pantallaDos", sender: self)
+    }
 }
 
