@@ -9,11 +9,23 @@ import UIKit
 
 class PantallaDosViewController: UIViewController {
 
-  
+    var tipoAuto: Int?
     @IBOutlet weak var mostrarInfo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        switch tipoAuto {
+        case 0:
+            print("Se creará auto sencillo")
+        case 1:
+            print("Se creará un Honda")
+        default:
+            print("fatal error")
+        }
+        
+
+        
 
  
     }

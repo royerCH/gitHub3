@@ -16,19 +16,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let automovil = Automovil()//instanciamos un objeto de la clase automovil
+        //let automovil = Automovil()//instanciamos un objeto de la clase automovil
     }
 
     @IBAction func btnCrearAutoSencillo(_ sender: Any) {
         
      
-        var tipoAuto = 0
+         tipoAuto = 0
         performSegue(withIdentifier: "pantallaDos", sender: self)
     }
     
     @IBAction func btnCrearAutoHonda(_ sender: Any) {
-        var tipoAuto = 1
+         tipoAuto = 1
         performSegue(withIdentifier: "pantallaDos", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destino = segue.destination as? PantallaDosViewController {
+            destino.tipoAuto = self.tipoAuto//la variable destino indica hacía que vista controlador se van a pasar los datos o funciones
+        }
     }
 }
 
