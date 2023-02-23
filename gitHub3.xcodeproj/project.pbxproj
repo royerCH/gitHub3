@@ -13,6 +13,8 @@
 		BEB694E129A7BEEA00F7EDB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB694DF29A7BEEA00F7EDB9 /* Main.storyboard */; };
 		BEB694E329A7BEED00F7EDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB694E229A7BEED00F7EDB9 /* Assets.xcassets */; };
 		BEB694E629A7BEED00F7EDB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB694E429A7BEED00F7EDB9 /* LaunchScreen.storyboard */; };
+		BEB694F029A7C38E00F7EDB9 /* PantallaDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB694EF29A7C38E00F7EDB9 /* PantallaDosViewController.swift */; };
+		BEB694F429A7C3A800F7EDB9 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB694F329A7C3A700F7EDB9 /* Automovil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BEB694E229A7BEED00F7EDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEB694E529A7BEED00F7EDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEB694E729A7BEED00F7EDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB694EF29A7C38E00F7EDB9 /* PantallaDosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDosViewController.swift; sourceTree = "<group>"; };
+		BEB694F329A7C3A700F7EDB9 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		BEB694D829A7BEEA00F7EDB9 /* gitHub3 */ = {
 			isa = PBXGroup;
 			children = (
+				BEB694EE29A7C36300F7EDB9 /* PantallaDos */,
 				BEB694D929A7BEEA00F7EDB9 /* AppDelegate.swift */,
 				BEB694DB29A7BEEA00F7EDB9 /* SceneDelegate.swift */,
 				BEB694DD29A7BEEA00F7EDB9 /* ViewController.swift */,
@@ -63,8 +68,17 @@
 				BEB694E229A7BEED00F7EDB9 /* Assets.xcassets */,
 				BEB694E429A7BEED00F7EDB9 /* LaunchScreen.storyboard */,
 				BEB694E729A7BEED00F7EDB9 /* Info.plist */,
+				BEB694F329A7C3A700F7EDB9 /* Automovil.swift */,
 			);
 			path = gitHub3;
+			sourceTree = "<group>";
+		};
+		BEB694EE29A7C36300F7EDB9 /* PantallaDos */ = {
+			isa = PBXGroup;
+			children = (
+				BEB694EF29A7C38E00F7EDB9 /* PantallaDosViewController.swift */,
+			);
+			path = PantallaDos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB694F029A7C38E00F7EDB9 /* PantallaDosViewController.swift in Sources */,
+				BEB694F429A7C3A800F7EDB9 /* Automovil.swift in Sources */,
 				BEB694DE29A7BEEA00F7EDB9 /* ViewController.swift in Sources */,
 				BEB694DA29A7BEEA00F7EDB9 /* AppDelegate.swift in Sources */,
 				BEB694DC29A7BEEA00F7EDB9 /* SceneDelegate.swift in Sources */,
