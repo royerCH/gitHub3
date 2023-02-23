@@ -8,8 +8,11 @@
 import UIKit
 
 class PantallaDosViewController: UIViewController {
-
+        /* en esta sección declaramos variables de clases creadas
+     así como variables tipo IBoulet*/
     var tipoAuto: Int?
+    var autoelectrico: Automovil?
+    var autoHonda : Automovil?
     @IBOutlet weak var mostrarInfo: UILabel!
     
     override func viewDidLoad() {
@@ -17,37 +20,40 @@ class PantallaDosViewController: UIViewController {
         
         switch tipoAuto {
         case 0:
-            print("Se creará auto sencillo")
+            autoelectrico = Automovil()
+            //print("Se creará auto sencillo: \(autoelectrico!.mostrar())") para imprimir en cosola
+            mostrarInfo.text = "El auto sencillo se creó correctamente"
         case 1:
-            print("Se creará un Honda")
+            autoHonda = Automovil()
+            print("Se creará un Honda:  \(autoHonda!.mostrar())")
+            mostrarInfo.text = "El auto Honda se creó correctamente"//de esta manera se muestra información en la interfaz de usuario
+            
         default:
             print("fatal error")
         }
-        
-
-        
+       
 
  
     }
     
     @IBAction func btnMOstrarINfo(_ sender: Any) {
-            print("muestro información")
+        mostrarInfo.text = "hello"
     }
     
     
     
     
     @IBAction func btnEncender(_ sender: Any) {
-        print("soy el botón encender")
+        mostrarInfo.text = "soy el botón encender"
     }
     
     
     @IBAction func btnApagar(_ sender: Any) {
-        print("soy el botón apagar")
+        mostrarInfo.text = "soy el botón apagar"
     }
     
     
     @IBAction func btnAcelerar(_ sender: Any) {
-        print("soy el botón acelerar")
+        mostrarInfo.text = "soy el botón acelerar"
     }
 }

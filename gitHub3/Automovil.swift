@@ -10,7 +10,7 @@ import Foundation
 
 class Automovil{
     
-    var color = "neutro"
+    var color = "Blanco"
     var numLlantas = 4
     var precio = 0
     
@@ -23,7 +23,7 @@ class Automovil{
     }
     
     func mostrar() -> String {
-        return "vehículo"
+        return "vehículo \(color)"
     }
     func acelerar() -> String {
         return "aceleración con éxito "

@@ -15,6 +15,7 @@
 		BEB694E629A7BEED00F7EDB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB694E429A7BEED00F7EDB9 /* LaunchScreen.storyboard */; };
 		BEB694F029A7C38E00F7EDB9 /* PantallaDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB694EF29A7C38E00F7EDB9 /* PantallaDosViewController.swift */; };
 		BEB694F429A7C3A800F7EDB9 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB694F329A7C3A700F7EDB9 /* Automovil.swift */; };
+		BEB694F729A7E7CB00F7EDB9 /* AutoElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB694F629A7E7CB00F7EDB9 /* AutoElectrico.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BEB694E729A7BEED00F7EDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB694EF29A7C38E00F7EDB9 /* PantallaDosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDosViewController.swift; sourceTree = "<group>"; };
 		BEB694F329A7C3A700F7EDB9 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
+		BEB694F629A7E7CB00F7EDB9 /* AutoElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoElectrico.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BEB694E429A7BEED00F7EDB9 /* LaunchScreen.storyboard */,
 				BEB694E729A7BEED00F7EDB9 /* Info.plist */,
 				BEB694F329A7C3A700F7EDB9 /* Automovil.swift */,
+				BEB694F629A7E7CB00F7EDB9 /* AutoElectrico.swift */,
 			);
 			path = gitHub3;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB694F029A7C38E00F7EDB9 /* PantallaDosViewController.swift in Sources */,
+				BEB694F729A7E7CB00F7EDB9 /* AutoElectrico.swift in Sources */,
 				BEB694F429A7C3A800F7EDB9 /* Automovil.swift in Sources */,
 				BEB694DE29A7BEEA00F7EDB9 /* ViewController.swift in Sources */,
 				BEB694DA29A7BEEA00F7EDB9 /* AppDelegate.swift in Sources */,
