@@ -9,21 +9,33 @@ import UIKit
 
 class PantallaDosViewController: UIViewController {
 
+  
+    @IBOutlet weak var mostrarInfo: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+ 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnMOstrarINfo(_ sender: Any) {
+            print("muestro información")
     }
-    */
-
+    
+    
+    
+    
+    @IBAction func btnEncender(_ sender: Any) {
+        print("soy el botón encender")
+    }
+    
+    
+    @IBAction func btnApagar(_ sender: Any) {
+        print("soy el botón apagar")
+    }
+    
+    
+    @IBAction func btnAcelerar(_ sender: Any) {
+        print("soy el botón acelerar")
+    }
 }

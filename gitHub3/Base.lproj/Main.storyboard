@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Crear Auto Sencillo"/>
                                 <connections>
-                                    <action selector="btnEncender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnn-MR-4If"/>
+                                    <action selector="btnCrearAutoSencillo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnn-MR-4If"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4b-TD-zSd">
@@ -40,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Crear auto Honda"/>
                                 <connections>
-                                    <action selector="btnApagar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8J5-qv-Pfa"/>
+                                    <action selector="btnCrearAutoHonda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8J5-qv-Pfa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,23 +76,35 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-lo-aYo">
                                 <rect key="frame" x="126" y="112" width="172" height="30"/>
                                 <state key="normal" title="Mostrar info."/>
+                                <connections>
+                                    <action selector="btnMOstrarINfo:" destination="pSW-te-iwg" eventType="touchUpInside" id="9CG-mx-A6c"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN3-hK-Mo6">
                                 <rect key="frame" x="126" y="413" width="172" height="30"/>
-                                <state key="normal" title="Mostrar info."/>
+                                <state key="normal" title="Encender"/>
+                                <connections>
+                                    <action selector="btnEncender:" destination="pSW-te-iwg" eventType="touchUpInside" id="G7b-Pc-cty"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBs-4V-r6M">
                                 <rect key="frame" x="130" y="492" width="172" height="30"/>
-                                <state key="normal" title="Mostrar info."/>
+                                <state key="normal" title="Apagar"/>
+                                <connections>
+                                    <action selector="btnApagar:" destination="pSW-te-iwg" eventType="touchUpInside" id="Bqa-Pk-fRr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD2-NF-LfR">
                                 <rect key="frame" x="132" y="555" width="172" height="30"/>
-                                <state key="normal" title="Mostrar info."/>
+                                <state key="normal" title="Acelerar"/>
+                                <connections>
+                                    <action selector="btnAcelerar:" destination="pSW-te-iwg" eventType="touchUpInside" id="v7B-6d-621"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostrar Información" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-g3-I3T">
-                                <rect key="frame" x="20" y="730" width="330" height="53"/>
+                                <rect key="frame" x="20" y="605" width="353" height="238"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="e6t-pl-oiO"/>
+                                    <constraint firstAttribute="height" constant="238" id="07X-u5-Pxu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -102,26 +114,29 @@
                         <viewLayoutGuide key="safeArea" id="lhy-39-IS9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oYp-g3-I3T" firstAttribute="leading" secondItem="zwp-yy-PLb" secondAttribute="leadingMargin" id="3SD-Pd-LGZ"/>
                             <constraint firstItem="tuv-lo-aYo" firstAttribute="leading" secondItem="lhy-39-IS9" secondAttribute="leading" constant="126" id="5LU-wD-Y5g"/>
                             <constraint firstItem="BLR-DE-392" firstAttribute="top" secondItem="tuv-lo-aYo" secondAttribute="bottom" constant="17" id="8lm-vO-b0f"/>
+                            <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="oYp-g3-I3T" secondAttribute="trailing" constant="41" id="Bo4-oJ-MUs"/>
                             <constraint firstItem="vBs-4V-r6M" firstAttribute="leading" secondItem="lhy-39-IS9" secondAttribute="leading" constant="130" id="DrK-Jo-pnr"/>
                             <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="tuv-lo-aYo" secondAttribute="trailing" constant="116" id="ESa-Hx-Cru"/>
                             <constraint firstItem="aN3-hK-Mo6" firstAttribute="trailing" secondItem="tuv-lo-aYo" secondAttribute="trailing" id="FMS-Ri-VvP"/>
                             <constraint firstItem="aN3-hK-Mo6" firstAttribute="top" secondItem="BLR-DE-392" secondAttribute="bottom" constant="65" id="H0m-GS-sxQ"/>
-                            <constraint firstItem="lhy-39-IS9" firstAttribute="bottom" secondItem="oYp-g3-I3T" secondAttribute="bottom" constant="79" id="Jek-Er-d7Q"/>
                             <constraint firstItem="vBs-4V-r6M" firstAttribute="top" secondItem="aN3-hK-Mo6" secondAttribute="bottom" constant="49" id="KQ5-hv-oiL"/>
                             <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="vBs-4V-r6M" secondAttribute="trailing" constant="112" id="N9U-VK-ZWM"/>
+                            <constraint firstItem="oYp-g3-I3T" firstAttribute="top" secondItem="hD2-NF-LfR" secondAttribute="bottom" constant="20" id="O76-hR-nC7"/>
                             <constraint firstItem="aN3-hK-Mo6" firstAttribute="top" secondItem="zwp-yy-PLb" secondAttribute="top" constant="413" id="QWy-2x-neR"/>
-                            <constraint firstItem="lhy-39-IS9" firstAttribute="trailing" secondItem="oYp-g3-I3T" secondAttribute="trailing" constant="64" id="V2M-4L-MEk"/>
                             <constraint firstItem="hD2-NF-LfR" firstAttribute="top" secondItem="vBs-4V-r6M" secondAttribute="bottom" constant="33" id="V9r-hb-Qe2"/>
                             <constraint firstItem="hD2-NF-LfR" firstAttribute="leading" secondItem="aN3-hK-Mo6" secondAttribute="leading" id="h2G-AF-yAn"/>
                             <constraint firstItem="tuv-lo-aYo" firstAttribute="top" secondItem="lhy-39-IS9" secondAttribute="top" constant="24" id="ltL-Du-Fpu"/>
                             <constraint firstItem="hD2-NF-LfR" firstAttribute="trailing" secondItem="aN3-hK-Mo6" secondAttribute="trailing" id="pAu-xw-swd"/>
                             <constraint firstItem="aN3-hK-Mo6" firstAttribute="leading" secondItem="tuv-lo-aYo" secondAttribute="leading" id="qLZ-Oy-EQT"/>
+                            <constraint firstItem="oYp-g3-I3T" firstAttribute="leading" secondItem="zwp-yy-PLb" secondAttribute="leadingMargin" id="xN2-el-qbA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yMo-sa-yKm"/>
+                    <connections>
+                        <outlet property="mostrarInfo" destination="oYp-g3-I3T" id="ETs-V3-JaA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2r-RZ-c4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

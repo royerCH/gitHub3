@@ -8,24 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var tipoAuto: Int? // se crea una variable de tipo opcional
     
     
     @IBOutlet weak var claseVehi: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let automovil = Automovil()
+        let automovil = Automovil()//instanciamos un objeto de la clase automovil
     }
 
-    @IBAction func btnEncender(_ sender: Any) {
+    @IBAction func btnCrearAutoSencillo(_ sender: Any) {
         
-        print("soy el boton encender")
+     
+        var tipoAuto = 0
         performSegue(withIdentifier: "pantallaDos", sender: self)
     }
     
-    @IBAction func btnApagar(_ sender: Any) {
-        print("soy el boton apagar")
+    @IBAction func btnCrearAutoHonda(_ sender: Any) {
+        var tipoAuto = 1
         performSegue(withIdentifier: "pantallaDos", sender: self)
     }
 }
